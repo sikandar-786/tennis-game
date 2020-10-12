@@ -124,7 +124,7 @@ function moveEverything(){
 function drawNet(){
                for( var i=0; i<canvas.height; i+=40){
                
-       colorRect(canvas.width/2-1,i,2,20,'green');
+       colorRect(canvas.width/2-1,i+10,2,20,'green');
 
 
                     }
@@ -147,11 +147,11 @@ function drawEverything() {
                              return;
                          }
                  drawNet();
-                colorRect(0,paddle1y,paddleThickness,paddleHeight,'white');//left paddle
+                colorRect(0,paddle1y,paddleThickness,paddleHeight,'blue');//left paddle
                 colorRect(canvas.width-paddleThickness,paddle2y,
-                       paddleThickness,paddleHeight,'white');//right paddle
+                       paddleThickness,paddleHeight,'blue');//right paddle
                // next line draw circle
-                 drawCircle(ballX,ballY,10,'white');
+                 drawCircle(ballX,ballY,10,'yellow');
                 //draw score
 
                  canvasContext.fillText(player1Score,100,100);
